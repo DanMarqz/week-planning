@@ -35,6 +35,7 @@ body{
 .padding-box{
   box-sizing: border-box;
   padding: 24px;
+  margin: 20px;
 }
 
 .title p:first-child{
