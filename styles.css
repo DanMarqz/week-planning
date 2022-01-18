@@ -27,7 +27,7 @@ body{
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-gap: 20px;
-  height: 95%;
+  height: 90%;
   width: 90%;
 	align-content: center;
 }
