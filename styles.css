@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,200;0,300;0,400;1,600&family=Lato:wght@100;300;400;700&display=swap');
+
+:root{
+  --lato: 'Lato', sans-serif;
+  --jetBrainsMono: 'JetBrains Mono', monospace;
+}
+
+body{
+  background-image: linear-gradient(to right bottom, #d0ec90, #c2ec94, #b4eb9a, #a6eaa0, #98e9a6, #8ee9ad, #83e9b5, #79e9bc, #70eac6, #67ebd0, #60ecda, #5aede3);
+  display: grid;
+  font-family: var(--lato);
+  height: 100vh;
+  margin: 0;
+  place-items: center
+}
+
+.glassmorphism-effect {
+  background: rgba( 255, 255, 255, 0.10 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  -webkit-backdrop-filter: blur( 4px );
+          backdrop-filter: blur( 4px );
+  border-radius: 16px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 20px;
+  height: 95%;
+  width: 90%;
+	align-content: center;
+}
+
+.padding-box{
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+.title p:first-child{
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.title p:last-child{
+  font-size: 16px;
+  margin-bottom: 30px;
+	font-weight: 300;
+}
+
+.goals {
+    align-items: center;
+    display: flex;
+}
+
+.goals div {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    margin-right: 10px;
+    width: 50px;
+		margin-bottom: 20px;
+}
+
+.goals p{
+	font-family: var(--jetBrainsMono)
+}
+
+.goals img {
+    width: 35px;
+}
+
+
+.main-content > div:nth-child(2){
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.main-content > div:nth-child(2) p{
+	font-family: var(--jetBrainsMono)
+}
+
+.card{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+	height: 100px;
+	position: relative;
+	width: 100%;
+}
+
+.card > div:first-child{
+	align-items: center;
+	border-radius: 16px;
+	display: flex;
+	grid-column: 1/5;
+	grid-row: 1/2;
+	z-index: 1;
+}
+
+.card > div:first-child p{
+	color:DodgerBlue;
+	margin: 0;
+	padding-right: 7px;
+	transform: rotate(180deg);
+	writing-mode: vertical-rl;
+	font-family: --var(jetBrainsMono);
+}
+
+.card > div:last-child{
+	border-radius: 16px;
+	display: grid;
+	grid-column: 2/5;
+	grid-row: 1/2;
+	justify-content: center;
+	z-index: 2;
+}
+
+.card > div:last-child p:first-child{
+	font-size: 18px;
+	font-weight: 700;
+	margin: 18px 0 -8px 0;
+}
+
+.card > div:last-child p:last-child{
+	margin: 0;
+	font-family: var(--lato)
+}
+
+.margin-bottom-card {
+	margin-bottom: 20px;
+}
+
